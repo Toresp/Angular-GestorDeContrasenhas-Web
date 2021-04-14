@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "$user_id": {
+      "ultima_conexion": {
+        ".read": true,
+        ".write": true
+      },
+      "contraseñas": {
+        ".read": "$user_id === auth.uid",
+        ".write": "$user_id === auth.uid"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<Header>
+    <div class="page2">    
+
+          <div class="box" >
+            <div *ngFor="let pass of data"  class="container">
+              <div class="pageBox">{{pass.page}}</div>
+              <div >
+                  <input
+                  [type]="Hidden? 'password' : 'text' " 
+                  class="form-control"
+                  value = {{pass.password}}
+                  readonly
+                  />
+              </div>
+            </div>
+          </div>
+
+    </div>
+    <div class="eye">
+      <div class="input-group-append">
+      <span class="input-group-text">
+        <i class="fa "
+          [ngClass]="{ 
+              'fa-eye-slash': !Hidden,
+              'fa-eye': Hidden
+          }"
+          (click)="hide()"
+        ></i>
+      </span>
+    </div></div>
+     
+
+
+</Header>
