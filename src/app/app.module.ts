@@ -10,6 +10,7 @@ import {environment} from 'src/environments/environment';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PassDataComponent } from './pass-data/pass-data.component';
 import { HomeComponent } from './home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     AngularFireDatabaseModule,
     ReactiveFormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
